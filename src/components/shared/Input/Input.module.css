@@ -1,0 +1,30 @@
+.formControl {
+  max-width: 30%;
+  margin: 0 auto;
+}
+.formControl ~ .formControl {
+  margin-top: 2rem;
+}
+.formControl label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.formControl input,
+.formControl textarea {
+  width: 100%;
+  /* align-items: center;
+  background-color: hsl(0, 0%, 100%);
+  border-color: hsl(0, 0%, 80%);
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  cursor: default;
+  display: flex;
+  justify-content: space-between;
+  min-height: 38px; */
+}
+.error {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+}

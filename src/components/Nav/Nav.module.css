@@ -1,0 +1,19 @@
+.navContainer {
+}
+
+.navContainer ul {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  height: 50px;
+  align-items: center;
+}
+
+.navContainer li {
+  text-align: center;
+}
+
+.navContainer div a {
+  font-size: 1.5rem;
+  padding: 5px;
+  text-decoration: none;
+}
