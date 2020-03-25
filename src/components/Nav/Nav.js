@@ -7,11 +7,8 @@ export const Nav = () => {
     <nav className={classes.navContainer}>
       <ul>
         <div>
-          <li>
-            <a href='#'>CASH/BILL</a>
-          </li>
+          <Link to='/'>CASH | Bill</Link>
         </div>
-
         <div>
           <Link to='/receiver'>Send Money</Link>
         </div>
