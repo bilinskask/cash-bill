@@ -1,14 +1,50 @@
 {
   "users": [],
-  "transactions": [
-    {
-      "name": "",
-      "surname": "",
-      "bankcode": "",
-      "account": "",
-      "account2": "",
-      "transactionId": "MT1585168759643",
-      "id": "1f8f380b-419c-4f1b-bce7-64fac73cce45"
-    }
-  ]
+  "transactions": [],
+  "dropdowndata": {
+    "receiveCountries": [
+      {
+        "value": "EE",
+        "label": "Estonia"
+      },
+      {
+        "value": "LV",
+        "label": "Latvia"
+      }
+    ],
+    "payInMethods": [
+      {
+        "value": "CC",
+        "label": "Credit Card"
+      },
+      {
+        "value": "DC",
+        "label": "Debit Card"
+      }
+    ],
+    "payOutMethods": [
+      {
+        "value": "CH",
+        "label": "Cash"
+      },
+      {
+        "value": "BK",
+        "label": "Bank"
+      }
+    ],
+    "receivingBanks": [
+      {
+        "value": "sebb",
+        "label": "SEB"
+      },
+      {
+        "value": "swed",
+        "label": "SWEDBANK"
+      },
+      {
+        "value": "lumi",
+        "label": "Luminor"
+      }
+    ]
+  }
 }

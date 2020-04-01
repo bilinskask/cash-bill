@@ -1,18 +1,29 @@
-import React from 'react'
-import './App.css'
-import 'bootstrap/dist/css/bootstrap.min.css'
+import React, { useEffect } from 'react'
 
-import Nav from './components/Nav'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import './App.css'
+
+import { NavBar } from './components/NavBar/NavBar'
 import { Container } from './components/shared/Container/Container'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
-//import { Receiver } from './pages/Receiver/Receiver'
 import { routes } from './routes'
+import { useDispatch } from 'react-redux'
+import { dropdownRetieval } from './redux/actions'
 
 function App() {
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    const fetchDropdownData = async () => {
+      dispatch(dropdownRetieval())
+    }
+    fetchDropdownData()
+  }, [])
+
   return (
     <BrowserRouter>
       <Container>
-        <Nav />
+        <NavBar />
         <Switch>
           {routes.map((route, index) => (
             <Route

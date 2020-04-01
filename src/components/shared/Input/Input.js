@@ -1,6 +1,5 @@
 import React from 'react'
-//import classes from './Input.module.css'
-import { Form } from 'react-bootstrap'
+import Form from 'react-bootstrap/Form'
 
 export const Input = ({
   label,
